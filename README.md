@@ -1,4 +1,4 @@
-# PID_controller
+
 # PID Controller
 
 This repository contains a simple PID controller implementation in C++. The PID controller is a feedback control algorithm widely used in control systems to regulate a process. It calculates an output based on the error between the desired setpoint and the current value, utilizing proportional, integral, and derivative control actions.
