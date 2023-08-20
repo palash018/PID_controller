@@ -80,3 +80,11 @@ To compile the PID controller code, you can follow these steps:
    ```
 
    This command compiles the main file along with
+   
+## Learn More
+
+To learn more about PID (Proportional-Integral-Derivative) controllers, you can visit the following resources:
+
+- [PID Controller on Wikipedia](https://en.wikipedia.org/wiki/PID_controller): Find detailed information about PID controllers, including their working principles, advantages, and applications.
+
+We encourage you to explore these resources to gain a deeper understanding of PID controllers and how they can be used in various control systems.
