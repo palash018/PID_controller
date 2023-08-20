@@ -5,6 +5,7 @@ class PID{
       PID(double,double,double);
       double compute(double,double);
       void reset(double,double,double);
+      unsigned long get_time();
   private:
     double kp;
     double ki;
