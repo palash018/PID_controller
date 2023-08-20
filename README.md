@@ -34,3 +34,49 @@ To use the PID controller, follow these steps:
    ```
 
    - `newKp`, `newKi`, and `newKd` are the new values for the proportional, integral
+
+## Compilation
+
+To compile the PID controller code, you can follow these steps:
+
+1. Create a new C++ source file in your preferred editor and include the required header file:
+
+   ```c++
+   #include "PID.h"
+   ```
+
+2. Implement the main function and define the PID controller parameters, current value, and desired value:
+
+   ```c++
+   int main() {
+       double kp = 0.5;
+       double ki = 0.2;
+       double kd = 0.1;
+
+       double currValue = 5.0;
+       double desiredValue = 10.0;
+
+       // Create an instance of the PID controller
+       PID pidController(kp, ki, kd);
+
+       // Compute the control output
+       double controlOutput = pidController.compute(currValue, desiredValue);
+
+       // Print the control output
+       std::cout << "Control Output: " << controlOutput << std::endl;
+
+       return 0;
+   }
+   ```
+
+3. Save the source file with a `.cpp` extension, for example, `main.cpp`.
+
+4. Open your terminal or command prompt and navigate to the directory where you saved the source file.
+
+5. Compile the code using a C++ compiler, such as `g++`:
+
+   ```shell
+   g++ main.cpp PID.cpp -o pid_controller
+   ```
+
+   This command compiles the main file along with
